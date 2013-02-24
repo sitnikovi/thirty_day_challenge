@@ -1,5 +1,22 @@
 # Exercises for chapter 2: Problems 2.1, 2.2, 2.3, and 2.4 in Think Python
 
+# 2.1
+
+If you type an integer with a leading zero, you might get a confusing error:
+>>> zipcode = 02492
+SyntaxError: invalid token
+Other numbers seem to work, but the results are bizarre:
+>>> zipcode = 02132
+>>> zipcode
+1114
+Can you ?gure out what is going on? Hint: display the values 01,010, 0100, 01000
+Python is assuming that we want to convert octal number to a decimal number and in the second case, 9 won’t be a valid octal number, though we still can do the conversion manually:
+>>> print 02132
+1114
+>>> (2*512)+(1*64)+(3*8)+(2*1)
+1114
+>>>
+
 # 2.2
 
 Type the following statements in the Python interpreter to see what they do:
