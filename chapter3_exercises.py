@@ -1,19 +1,22 @@
 # Exercises for chapter 3: Problems 3.1, 3.2, 3.3, and 3.4 in Think Python
 
-Exercise 3.1. Move the last line of this program to the top, so the function call appears before the
-de?nitions. Run the program and see what error message you get.
-name �repeat_lyrics� is not defined
+Exercise 3.1.
+Move the last line of this program to the top, so the function call appears before the
+definitions. Run the program and see what error message you get.
+name 'repeat_lyrics' is not defined
 
 Exercise 3.2. 
-Move the function call back to the bottom and move the de?nition of print lyrics
+Move the function call back to the bottom and move the definition of print lyrics
 after the de?nition of repeat lyrcs. What happens when you run this program?
-Everything remains the same � no errors. 
+Everything remains the same - no errors. 
+
 Exercise 3.3 
-Python provides a built-in function called len that returns the length of a string, so the value of len(�allen�) is 5.
+Python provides a built-in function called len that returns the length of a string, so the value of len('allen') is 5.
 Write a function named right_justify that takes a string named s as a parameter and prints the string with enough leading spaces so that the last letter of the string is in column 70 of the display.
 def right_justify(s):
-         print (� �*(70-len(s))+s)
-right_justify(�allen�)
+         print (' '*(70-len(s))+s)
+right_justify('allen')
+
 Exercise 3.4
 1. Type this example into a script and test it.
 def do_twice(f):
