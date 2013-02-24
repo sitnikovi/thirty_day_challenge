@@ -2,18 +2,18 @@
 
 Exercise 3.1. Move the last line of this program to the top, so the function call appears before the
 de?nitions. Run the program and see what error message you get.
-name ‘repeat_lyrics’ is not defined
+name ï¿½repeat_lyricsï¿½ is not defined
 
 Exercise 3.2. 
 Move the function call back to the bottom and move the de?nition of print lyrics
 after the de?nition of repeat lyrcs. What happens when you run this program?
-Everything remains the same – no errors. 
+Everything remains the same ï¿½ no errors. 
 Exercise 3.3 
-Python provides a built-in function called len that returns the length of a string, so the value of len(‘allen’) is 5.
+Python provides a built-in function called len that returns the length of a string, so the value of len(ï¿½allenï¿½) is 5.
 Write a function named right_justify that takes a string named s as a parameter and prints the string with enough leading spaces so that the last letter of the string is in column 70 of the display.
 def right_justify(s):
-         print (‘ ‘*(70-len(s))+s)
-right_justify(‘allen’)
+         print (ï¿½ ï¿½*(70-len(s))+s)
+right_justify(ï¿½allenï¿½)
 Exercise 3.4
 1. Type this example into a script and test it.
 def do_twice(f):
@@ -32,7 +32,7 @@ def print_spam(nope):
     print 'nope'
 do_twice(print_spam, nope)
 3. Write a more general version of print_spam, called print_twice, that 
-# takes a string as a parameter and prints it twice.
+takes a string as a parameter and prints it twice.
 string = 'string'
 def print_twice(string):
     print string
